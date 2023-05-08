@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+    </head>
+    <body>
+        <!-- Google Search front-end -->
+        <div class="search-container">
+            <form action="https://www.google.com/search" method="get" target="_blank">
+              <input type="text" placeholder="Search Google..." name="q">
+              <table>
+                <tr>
+                  <td>
+                    <button type="submit">Google Search</button>
+                  </td>
+                  <td>
+                    <button type="submit" formaction="https://www.google.com/search" formmethod="get" formtarget="_blank" name="btnI" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          <!-- Links to other search pages -->
+          <div class="nav-links">
+            <table>
+            <tr>
+                <td>
+                    <a href="image-search.html">Image Search</a>
+                </td>
+                <td>
+                    <a href="advanced-search.html">Advanced Search</a>
+                </td>
+            </tr>
+        </table>   
+          </div>
+  
+          <style>
+            .search-container {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .nav-links {
+                display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 8px 0;
+            }
+            form {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            input[type="text"] {
+              width: 150%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              box-sizing: border-box;
+              border: 2px solid #ccc;
+              border-radius: 4px;
+            }
+            button[type="submit"] 
+            {
+              width: 100%;
+              background-color: #5705ee;
+              color: white;
+              padding: 10px 20px;
+              margin: 8px 0;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+            button[type="submit"]:hover {
+              background-color: #4904ca;
+            }
+            table {
+    border-collapse: separate;
+    border-spacing: 5px;
+  }
+  td {
+    padding: 0;
+  }
+          </style>
+          </html>

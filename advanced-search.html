@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>advanced-search</title>
+    </head>
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="get" target="_blank">
+            <table>
+                <tr>
+          <div class="input-group">
+            <td>
+            <label for="all-words">Find pages with... "all these words:"</label>
+        </td>
+        <td>
+            <input type="text" id="all-words" name="q">
+        </td>
+          </div>
+        </tr>
+        <tr>
+          <div class="input-group">
+            <td>
+            <label for="exact-phrase">Find pages with... "this exact word or phrase:"</label>
+        </td>
+        <td>
+            <input type="text" id="exact-phrase" name="as_epq">
+        </td>
+          </div>
+        </tr>
+        <tr>
+          <div class="input-group">
+            <td>
+            <label for="any-words">Find pages with... "any of these words:"</label>
+        </td>
+        <td>
+            <input type="text" id="any-words" name="as_oq">
+        </td>
+          </div>
+        </tr>
+        <tr>
+          <div class="input-group">
+            <td>
+            <label for="none-words">Find pages with... "none of these words:"</label>
+        </td>
+        <td>
+            <input type="text" id="none-words" name="as_eq">
+        </td>
+          </div>
+        </tr>
+        </table>
+          <button type="submit" class="advanced-search-btn">Advanced Search</button>
+        </form>
+      </div>
+      
+      <style>
+        .search-container {
+          display: inline-flexbox;
+          align-items: center;
+          justify-content: center;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+        .input-group {
+          display: flex;
+          flex-direction: column;
+        }
+        label {
+          margin-bottom: 8px;
+        }
+        input[type="text"] {
+          width: 60%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+        }
+        button[type="submit"] {
+          width: 30%;
+          background-color: #0069d9;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        button[type="submit"]:hover {
+          background-color: #034f81;
+        }
+        
+      </style>
+</html>
